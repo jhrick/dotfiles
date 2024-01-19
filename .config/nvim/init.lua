@@ -1,5 +1,2 @@
-require("autocmds")
-require("options")
-require("mappings")
-require("plugins")
-require("cmds")
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
