@@ -1,4 +1,6 @@
-font pango:JetBrainsMono Nerd Font Propo 10
+font pango:JetBrainsMonoNLNerdFont 10
+
+exec_always kitty --font 'JetBrainsMonoNLNerdFont 10'
 
 gaps inner 10
 gaps outer 10
@@ -11,10 +13,10 @@ set $down j
 set $up k
 set $right l
 set $term kitty
-set $menu rofi -show run
+set $menu --no-startup-id ~/.config/rofi/launchers/type-1/launcher.sh
 
 ### Output configuration
-output "*" bg ~/Wallpapers/636945-social-distortion-minimalism-black-Japan-Japanese.jpg fill
+output "*" bg ~/Wallpapers/nature_Japan_dark_texture_atmosphere_sky_blue-1448889.jpg fill
 ### Idle configuration
 
 ### Input configuration
@@ -45,6 +47,7 @@ input * {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
+    bindsym $mod+x exec --no-startup-id ~/.config/rofi/powermenu/type-3/powermenu.sh
     bindsym $mod+d exec $menu
 
     floating_modifier $mod normal
