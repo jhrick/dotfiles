@@ -1,0 +1,116 @@
+{
+  "breadcrumbs.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.esling": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorSurroundingLines": 15,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12.5,
+  "editor.lineHeight": 2,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "editor.rulers": [80, 120],
+  "editor.semanticHighlighting.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, prettier*, tsconfig*, vite*, pnpm-lock*, package-lock*, bun.lock",
+    "tailwind.config*": "tailwind.config*, postcss.config*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "javascript.suggest.autoImports": true,
+  "makefile.configureOnOpen": false,
+  "material-icon-theme.folders.associations": {
+    "adapters": "contract",
+    "grpc": "pipe",
+    "kube": "kubernetes",
+    "main": "lib",
+    "websockets": "pipe",
+    "implementations": "core",
+    "protos": "pipe",
+    "entities": "class",
+    "kafka": "pipe",
+    "use-cases": "functions",
+    "migrations": "tools",
+    "schemas": "class",
+    "useCases": "functions",
+    "eslint-config": "tools",
+    "typeorm": "database",
+    "_shared": "shared",
+    "mappers": "meta",
+    "fakes": "mock",
+    "modules": "components",
+    "subscribers": "messages",
+    "domain": "class",
+    "protocols": "contract",
+    "infra": "app",
+    "view-models": "views",
+    "presentation": "template",
+    "dtos": "typescript",
+    "http": "container",
+    "providers": "include",
+    "factories": "class",
+    "repositories": "mappings"
+  },
+  "symbols.files.associations": {
+    "*.sh": "code-green"
+  },
+  "symbols.folders.associations": {
+    "apache": "folder-green",
+    "business": "folder-services",
+    "controllers": "folder-red",
+    "crud": "folder-config",
+    "foundation": "folder-",
+    "migrations": "folder-database",
+    "model": "folder-models",
+    "templates": "folder-layout",
+    "vendor": "folder-yellow"
+  },
+  "symbols.hidesExplorerArrows": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 14,
+  "typescript.suggest.autoImports": true,
+  "workbench.activityBar.location": "hidden",
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "hidden",
+  "window.titleBarStyle": "custom",
+  "workbench.editor.labelFormat": "short",
+  "workbench.iconTheme": "symbols",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": false,
+  "redhat.telemetry.enabled": true,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.useSystemClipboard": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.colorTheme": "Oscura Midnight",
+}
