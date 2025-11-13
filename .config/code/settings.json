@@ -1,6 +1,5 @@
 {
-  "breadcrumbs.enabled": false,
-  "chat.commandCenter.enabled": false,
+	"chat.commandCenter.enabled": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.esling": "explicit",
     "source.organizeImports": "explicit"
@@ -13,6 +12,7 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 12.5,
   "editor.lineHeight": 2,
+	"editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "editor.rulers": [80, 120],
@@ -32,38 +32,6 @@
   "go.toolsManagement.autoUpdate": true,
   "javascript.suggest.autoImports": true,
   "makefile.configureOnOpen": false,
-  "material-icon-theme.folders.associations": {
-    "adapters": "contract",
-    "grpc": "pipe",
-    "kube": "kubernetes",
-    "main": "lib",
-    "websockets": "pipe",
-    "implementations": "core",
-    "protos": "pipe",
-    "entities": "class",
-    "kafka": "pipe",
-    "use-cases": "functions",
-    "migrations": "tools",
-    "schemas": "class",
-    "useCases": "functions",
-    "eslint-config": "tools",
-    "typeorm": "database",
-    "_shared": "shared",
-    "mappers": "meta",
-    "fakes": "mock",
-    "modules": "components",
-    "subscribers": "messages",
-    "domain": "class",
-    "protocols": "contract",
-    "infra": "app",
-    "view-models": "views",
-    "presentation": "template",
-    "dtos": "typescript",
-    "http": "container",
-    "providers": "include",
-    "factories": "class",
-    "repositories": "mappings"
-  },
   "symbols.files.associations": {
     "*.sh": "code-green"
   },
@@ -81,8 +49,7 @@
   "symbols.hidesExplorerArrows": false,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 14,
-  "typescript.suggest.autoImports": true,
-  "workbench.activityBar.location": "hidden",
+	"typescript.suggest.autoImports": true,
   "window.commandCenter": false,
   "window.menuBarVisibility": "hidden",
   "window.titleBarStyle": "custom",
@@ -91,26 +58,59 @@
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "newUntitledFile",
   "workbench.statusBar.visible": false,
-  "redhat.telemetry.enabled": true,
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.leader": "<space>",
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{ "before": ["<S-h>"], "commands": [":bprevious"] },
+		{ "before": ["<S-l>"], "commands": [":bnext"] },
+		{ "before": ["<S-j>"], "commands": ["workbench.action.togglePanel"] },
+
+		{ "before": ["<leader>", "v"], "commands": [":vsplit"] },
+		{ "before": ["<leader>", "s"], "commands": [":split"] },
+
+		{
+			"before": ["<C-h>"],
+			"commands": ["workbench.action.focusLeftGroup"],
+		},
+		{
+			"before": ["<C-j>"],
+			"commands": ["workbench.action.focusBelowGroup"],
+		},
+		{
+			"before": ["<C-k>"],
+			"commands": ["workbench.action.focusAboveGroup"],
+		},
+		{
+			"before": ["<C-l>"],
+			"commands": ["workbench.action.focusRightGroup"],
+		},
+
+		{
+			"before": ["<leader>", "n", "e"],
+			"commands": ["workbench.explorer.fileView.focus"],
+		},
+
+		{ "before": ["<leader>", "f"], "commands": ["workbench.action.quickOpen"] },
+		{ "before": ["<leader>", "p"], "commands": ["workbench.action.formatDocument"] },
+		{ "before": ["g", "h"], "commands": ["editor.action.showDefinitionPreviewHover"] },
+
+		{ "before": ["<leader>", "x"], "commands": [":bd"] },
+	],
+	"workbench.activityBar.location": "hidden",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.colorTheme": "Oscura Midnight",
+  "workbench.colorTheme": "Oscura Dusk",
+  "editor.insertSpaces": false,
+  "editor.detectIndentation": false,
+  "pythonIndent.useTabOnHangingIndent": true,
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+	"pythonIndent.keepHangingBracketOnLine": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"terminal.integrated.tabs.location": "left",
+	"security.workspace.trust.untrustedFiles": "open",
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	}
 }
