@@ -1,6 +1,6 @@
 local opt = vim.opt
+local g = vim.g
 
--- Interface
 opt.termguicolors = true
 opt.background = "dark"
 
@@ -24,6 +24,8 @@ opt.cursorline = true
 opt.wrap = false
 opt.scrolloff = 8
 opt.sidescrolloff = 8
+
+g.lazyvim_picker = "telescope"
 
 opt.fillchars = {
   eob = " ",
