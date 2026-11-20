@@ -1,36 +1,7 @@
-## My Dot Files
+# Dotfiles
 
-**OS:** `Arch Linux`
+This repository holds my personal configuration files. The setup is currently an active work in progress as I build out my workflow from scratch, focusing on keeping things lightweight, understandable, and tailored to my daily development needs.
 
-**WM (window manager):** `sway`
-<hr>
+## Current Environment & Stack
 
-**Fonts:** `JetBrainsMono Nerd Font`
-
-```fish
-sudo pacman -S ttf-jetbrains-mono-nerd
-```
-<hr>
-
-**Theme:** `WhiteSur-Dark-solid`
-
-```fish
-yay -S whitesur-gtk-theme #AUR
-```
-<hr>
-
-**Icons:** `WhiteSur-dark`
-
-```fish
-yay -S whitesur-gtk-theme #AUR
-```
-
-*tip: I used [this here](https://github.com/nwg-piotr/nwg-look) to change the font, theme and icons*
-<hr>
-
-**Terminal:** `kitty`
-
-**Shell:** `fish` with `starship`
-<hr>
-
-**For Mount USB Devices:** I install `udisk2` 
+At the core of this setup is **Arch Linux** coupled with **KDE 6 Plasma**.

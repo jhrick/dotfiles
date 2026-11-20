@@ -1,0 +1,119 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+# Configuração geral
+add_newline = true
+scan_timeout = 10
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$python\
+$rust\
+$golang\
+$cmd_duration\
+$status
+$username$hostname$character"""
+
+# 📁 Diretório
+[directory]
+style = "fg:#D8DADF"
+format = "[$path]($style) "
+truncation_length = 3
+truncate_to_repo = true
+read_only = " 🔒"
+read_only_style = "fg:#858990"
+
+
+# 🌿 Git
+[git_branch]
+symbol = "🌿 "
+style = "fg:#A8ADB5"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "fg:#92979F"
+format = "[$all_status$ahead_behind]($style) "
+
+conflicted = "🚩"
+ahead = "🚗💨"
+behind = "😨"
+diverged = "😵"
+untracked = "🤷"
+stashed = "📦"
+modified = "📝"
+renamed = "👅"
+deleted = "🗑️"
+
+[package]
+symbol = "📦 "
+style = "fg:#D8B36A"
+format = "is [$symbol$version]($style) "
+
+# 🧰 Linguagens
+[bun]
+symbol = "🍞 "
+style = "fg:#A6B0A0"
+format = "via [🍞](fg:#FBF0DF) [$version]($style) "
+
+[nodejs]
+symbol = " "
+style = "fg:#A6B0A0"
+format = "via [](fg:#83CD29) [$version]($style) "
+
+[python]
+symbol = "🐍 "
+style = "fg:#AAB6C5"
+format = "via [$symbol$version]($style) "
+
+[php]
+symbol = "🐘 "
+style = "fg:#AAB6C5"
+format = "via [$symbol$version]($style) "
+
+[rust]
+symbol = "🦀 "
+style = "fg:#B5A69A"
+format = "via [$symbol$version]($style) "
+
+[golang]
+symbol = "🐹 "
+style = "fg:#A5B8C0"
+format = "via [$symbol$version]($style) "
+
+# ⏱️ Duração
+[cmd_duration]
+min_time = 2000
+show_milliseconds = false
+style = "fg:#858990"
+format = "[⏱️ $duration]($style) "
+
+# 🚨 Status
+[status]
+disabled = false
+symbol = "❌ "
+success_symbol = ""
+not_found_symbol = "🔍 "
+not_executable_symbol = "🚫 "
+sigint_symbol = "⚡ "
+signal_symbol = "⚠️ "
+style = "fg:#B07D82"
+format = "[$symbol$status]($style) "
+
+# 👤 Identificação
+[username]
+show_always = true
+style_user = "fg:#A8ADB5"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "fg:#A8ADB5"
+format = "[@$hostname]($style) "
+
+# ➜ Prompt
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[➜](bold red) "
+vimcmd_symbol = "[➜](bold green) "
